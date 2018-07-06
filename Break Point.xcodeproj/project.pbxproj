@@ -14,6 +14,7 @@
 		CD0FA33320EFC19E001C50E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33220EFC19E001C50E2 /* Constants.swift */; };
 		CD0FA33520EFC1FD001C50E2 /* InSetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33420EFC1FD001C50E2 /* InSetTextField.swift */; };
 		CD0FA33720EFC51D001C50E2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33620EFC51D001C50E2 /* ShadowView.swift */; };
+		CD0FA33920EFC732001C50E2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33820EFC732001C50E2 /* AuthService.swift */; };
 		CDE05A3E20EE12BC007F7EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A3D20EE12BC007F7EFB /* AppDelegate.swift */; };
 		CDE05A4020EE12BC007F7EFB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A3F20EE12BC007F7EFB /* FirstViewController.swift */; };
 		CDE05A4220EE12BC007F7EFB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A4120EE12BC007F7EFB /* SecondViewController.swift */; };
@@ -32,6 +33,7 @@
 		CD0FA33220EFC19E001C50E2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD0FA33420EFC1FD001C50E2 /* InSetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSetTextField.swift; sourceTree = "<group>"; };
 		CD0FA33620EFC51D001C50E2 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		CD0FA33820EFC732001C50E2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CDE05A3A20EE12BC007F7EFB /* Break Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Break Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE05A3D20EE12BC007F7EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE05A3F20EE12BC007F7EFB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				CD0FA32C20EFB90F001C50E2 /* DataService.swift */,
 				CD0FA33220EFC19E001C50E2 /* Constants.swift */,
+				CD0FA33820EFC732001C50E2 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				CD0FA33520EFC1FD001C50E2 /* InSetTextField.swift in Sources */,
 				CDE05A3E20EE12BC007F7EFB /* AppDelegate.swift in Sources */,
 				CD0FA33320EFC19E001C50E2 /* Constants.swift in Sources */,
+				CD0FA33920EFC732001C50E2 /* AuthService.swift in Sources */,
 				CDE05A4020EE12BC007F7EFB /* FirstViewController.swift in Sources */,
 				CD0FA32D20EFB90F001C50E2 /* DataService.swift in Sources */,
 			);
