@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		CD0FA32B20EFB669001C50E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD0FA32A20EFB669001C50E2 /* GoogleService-Info.plist */; };
 		CD0FA32D20EFB90F001C50E2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA32C20EFB90F001C50E2 /* DataService.swift */; };
+		CD0FA32F20EFC15F001C50E2 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA32E20EFC15F001C50E2 /* AuthVC.swift */; };
+		CD0FA33120EFC16E001C50E2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33020EFC16E001C50E2 /* LoginVC.swift */; };
+		CD0FA33320EFC19E001C50E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33220EFC19E001C50E2 /* Constants.swift */; };
+		CD0FA33520EFC1FD001C50E2 /* InSetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33420EFC1FD001C50E2 /* InSetTextField.swift */; };
+		CD0FA33720EFC51D001C50E2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33620EFC51D001C50E2 /* ShadowView.swift */; };
 		CDE05A3E20EE12BC007F7EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A3D20EE12BC007F7EFB /* AppDelegate.swift */; };
 		CDE05A4020EE12BC007F7EFB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A3F20EE12BC007F7EFB /* FirstViewController.swift */; };
 		CDE05A4220EE12BC007F7EFB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A4120EE12BC007F7EFB /* SecondViewController.swift */; };
@@ -22,6 +27,11 @@
 		A6093B2BF8E825D496C4F86C /* Pods-Break Point.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Break Point.release.xcconfig"; path = "Pods/Target Support Files/Pods-Break Point/Pods-Break Point.release.xcconfig"; sourceTree = "<group>"; };
 		CD0FA32A20EFB669001C50E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD0FA32C20EFB90F001C50E2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CD0FA32E20EFC15F001C50E2 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		CD0FA33020EFC16E001C50E2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CD0FA33220EFC19E001C50E2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD0FA33420EFC1FD001C50E2 /* InSetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSetTextField.swift; sourceTree = "<group>"; };
+		CD0FA33620EFC51D001C50E2 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		CDE05A3A20EE12BC007F7EFB /* Break Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Break Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE05A3D20EE12BC007F7EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE05A3F20EE12BC007F7EFB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +68,8 @@
 		CD0FA32620EE18F3001C50E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD0FA33420EFC1FD001C50E2 /* InSetTextField.swift */,
+				CD0FA33620EFC51D001C50E2 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -80,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0FA32C20EFB90F001C50E2 /* DataService.swift */,
+				CD0FA33220EFC19E001C50E2 /* Constants.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -125,6 +138,8 @@
 			children = (
 				CDE05A4120EE12BC007F7EFB /* SecondViewController.swift */,
 				CDE05A3F20EE12BC007F7EFB /* FirstViewController.swift */,
+				CD0FA32E20EFC15F001C50E2 /* AuthVC.swift */,
+				CD0FA33020EFC16E001C50E2 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0FA33720EFC51D001C50E2 /* ShadowView.swift in Sources */,
+				CD0FA32F20EFC15F001C50E2 /* AuthVC.swift in Sources */,
 				CDE05A4220EE12BC007F7EFB /* SecondViewController.swift in Sources */,
+				CD0FA33120EFC16E001C50E2 /* LoginVC.swift in Sources */,
+				CD0FA33520EFC1FD001C50E2 /* InSetTextField.swift in Sources */,
 				CDE05A3E20EE12BC007F7EFB /* AppDelegate.swift in Sources */,
+				CD0FA33320EFC19E001C50E2 /* Constants.swift in Sources */,
 				CDE05A4020EE12BC007F7EFB /* FirstViewController.swift in Sources */,
 				CD0FA32D20EFB90F001C50E2 /* DataService.swift in Sources */,
 			);
