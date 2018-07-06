@@ -16,6 +16,7 @@
 		CD0FA33720EFC51D001C50E2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33620EFC51D001C50E2 /* ShadowView.swift */; };
 		CD0FA33920EFC732001C50E2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33820EFC732001C50E2 /* AuthService.swift */; };
 		CD0FA33B20EFDD99001C50E2 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33A20EFDD99001C50E2 /* MeVC.swift */; };
+		CD0FA33D20EFE4EA001C50E2 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33C20EFE4EA001C50E2 /* CreatePostVC.swift */; };
 		CDE05A3E20EE12BC007F7EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A3D20EE12BC007F7EFB /* AppDelegate.swift */; };
 		CDE05A4020EE12BC007F7EFB /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A3F20EE12BC007F7EFB /* FeedVC.swift */; };
 		CDE05A4220EE12BC007F7EFB /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE05A4120EE12BC007F7EFB /* GroupsVC.swift */; };
@@ -36,6 +37,7 @@
 		CD0FA33620EFC51D001C50E2 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		CD0FA33820EFC732001C50E2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CD0FA33A20EFDD99001C50E2 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		CD0FA33C20EFE4EA001C50E2 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		CDE05A3A20EE12BC007F7EFB /* Break Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Break Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE05A3D20EE12BC007F7EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE05A3F20EE12BC007F7EFB /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				CD0FA32E20EFC15F001C50E2 /* AuthVC.swift */,
 				CD0FA33020EFC16E001C50E2 /* LoginVC.swift */,
 				CD0FA33A20EFDD99001C50E2 /* MeVC.swift */,
+				CD0FA33C20EFE4EA001C50E2 /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				CDE05A3E20EE12BC007F7EFB /* AppDelegate.swift in Sources */,
 				CD0FA33320EFC19E001C50E2 /* Constants.swift in Sources */,
 				CD0FA33B20EFDD99001C50E2 /* MeVC.swift in Sources */,
+				CD0FA33D20EFE4EA001C50E2 /* CreatePostVC.swift in Sources */,
 				CD0FA33920EFC732001C50E2 /* AuthService.swift in Sources */,
 				CDE05A4020EE12BC007F7EFB /* FeedVC.swift in Sources */,
 				CD0FA32D20EFB90F001C50E2 /* DataService.swift in Sources */,
