@@ -10,26 +10,43 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var emailField: InSetTextField!
+    @IBOutlet weak var passwordField: InSetTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        emailField.delegate = self
+        passwordField.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func signInButtonWasPressed(_ sender: Any) {
+        if emailField.text != nil && passwordField.text != nil {
+            AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordField.text!) { (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: error?.localizedDescription))
+                }
+                
+                AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, userCreationComplete: { (success, error) in
+                    if success {
+                        AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, loginCreationComplete: { (success, error) in
+                            print("Successfully Registered User")
+                            self.dismiss(animated: true, completion: nil)
+                        })
+                    } else{
+                        print(String(describing: error?.localizedDescription))
+                    }
+                })
+            }
+        }
     }
-    */
+    
+    @IBAction func closeButtonWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+}
 
+extension LoginVC: UITextFieldDelegate {
+    
 }

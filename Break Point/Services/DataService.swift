@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 
+//Firebase Database URL Method
 let DB_BASE = Database.database().reference()
 
 class DataService{

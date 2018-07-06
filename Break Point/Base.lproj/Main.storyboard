@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y35-Eg-v1k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -123,6 +123,9 @@
                                                 <state key="normal" title="Login With FaceBook">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInByFacebookButtonWasPressed:" destination="Qtk-8E-Zep" eventType="touchUpInside" id="ytO-De-mBm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XL-Fr-zL1">
                                                 <rect key="frame" x="0.0" y="135" width="310" height="57.5"/>
@@ -131,6 +134,9 @@
                                                 <state key="normal" title="Login with G+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInByGoogleButtonWasPressed:" destination="Qtk-8E-Zep" eventType="touchUpInside" id="Rnz-AI-FiD"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5l-t2-pyJ">
                                                 <rect key="frame" x="0.0" y="202.5" width="310" height="57.5"/>
@@ -149,6 +155,9 @@
                                         <state key="normal" title=" by email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInByEmailButtonWasPressed:" destination="Qtk-8E-Zep" eventType="touchUpInside" id="txF-qb-uMF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,6 +207,9 @@
                                     <constraint firstAttribute="height" constant="30" id="uh7-Iw-g8Z"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeButtonWasPressed:" destination="y35-Eg-v1k" eventType="touchUpInside" id="SkO-mL-Kzz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hE-9I-o5R">
                                 <rect key="frame" x="147" y="251" width="80" height="32"/>
@@ -208,6 +220,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButtonWasPressed:" destination="y35-Eg-v1k" eventType="touchUpInside" id="8qG-SJ-wDz"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="obN-oA-BX8">
                                 <rect key="frame" x="20" y="70" width="335" height="161"/>
@@ -253,10 +268,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZVB-bB-67B"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Uv2-MR-ryx" id="iaS-87-VTe"/>
+                        <outlet property="passwordField" destination="bcH-zk-9ho" id="0w1-cB-rtF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9E-FY-GYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-658.39999999999998" y="-126.38680659670166"/>
+            <point key="canvasLocation" x="-714" y="-375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
