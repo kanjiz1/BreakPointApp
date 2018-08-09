@@ -15,9 +15,16 @@ class CreatePostVC: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        sendButton.bindToKeyboard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.emailLabel.text = Auth.auth().currentUser?.email
     }
 
     @IBAction func closeButtonWasPressed(_ sender: Any) {
@@ -25,7 +32,7 @@ class CreatePostVC: UIViewController {
     }
     
     @IBAction func sendButtonWasPressed(_ sender: Any) {
-        if textView.text != nil /*&& textView.text != "Say Something Here..."*/{
+        if textView.text != nil && textView.text != "Say Something Here..."{
             sendButton.isEnabled = false
             DataService.instance.uploadPosts(uploadPostWithMessage: textView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroup: nil) { (isComplete) in
                 if isComplete {

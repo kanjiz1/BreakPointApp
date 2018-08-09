@@ -10,3 +10,6 @@ import Foundation
 
 let AUTH_VC = "AuthVC"
 let LOGIN_VC = "LoginVC"
+let FEED_CELL = "feedCell"
+let CREATE_GROUPS_VC = "createGroupsVC"
+let USER_CELL = "userCell"

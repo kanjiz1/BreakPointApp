@@ -54,4 +54,62 @@ class DataService{
         }
     }
     
+    //Getting Username for uid
+    func getUsername(forUID uid:String, handler: @escaping (_ username: String) -> ()){
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapShot) in
+            guard let userSnapShot = userSnapShot.children.allObjects as? [DataSnapshot] else {return}
+            for user in userSnapShot {
+                if user.key == uid {
+                   handler(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
+    
+    //Downloading messages from Firebase
+    func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()){
+        var messageArray = [Message]()
+        
+        REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
+            guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [DataSnapshot] else {return}
+            
+            for message in feedMessageSnapshot {
+                let content = message.childSnapshot(forPath: "content").value as! String
+                let senderID = message.childSnapshot(forPath: "senderID").value as! String
+                let message = Message(content: content, senderID: senderID)
+                messageArray.append(message)
+            }
+            
+            handler(messageArray)
+        }
+    }
+    
+    
+    func getEmail (forSearchQuery query: String, handler: @escaping (_ emailArray: [String]) -> ()){
+        var emailArray = [String]()
+        REF_USERS.observe(.value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else {return}
+            
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                
+                if email.contains(query) == true  && email != Auth.auth().currentUser?.email{
+                    emailArray.append(email)
+                }
+            }
+            handler(emailArray)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
