@@ -26,25 +26,14 @@ class CreateGroupsVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         emailSearchTextField.delegate = self
-        emailSearchTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         doneButton.isHidden = true
     }
-    
-    @objc func textFieldDidChange(){
-        if emailSearchTextField.text == "" {
-            emailArray = []
-            tableView.reloadData()
-        } else {
-            DataService.instance.getEmail(forSearchQuery: emailSearchTextField.text!) { (returnedEmailArray) in
-                self.emailArray = returnedEmailArray
-                self.tableView.reloadData()
-            }
-        }
-    }
+
     
     @IBAction func doneButtonWasPressed(_ sender: Any) {
         if titleTextField.text != "" && descriptionTextField.text != "" {
@@ -62,6 +51,7 @@ class CreateGroupsVC: UIViewController {
             }
         }
     }
+    
     @IBAction func cancelButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -109,6 +99,3 @@ extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension CreateGroupsVC: UITextFieldDelegate{
-    
-}

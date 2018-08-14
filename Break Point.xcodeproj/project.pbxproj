@@ -17,6 +17,7 @@
 		CD0FA33920EFC732001C50E2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33820EFC732001C50E2 /* AuthService.swift */; };
 		CD0FA33B20EFDD99001C50E2 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33A20EFDD99001C50E2 /* MeVC.swift */; };
 		CD0FA33D20EFE4EA001C50E2 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FA33C20EFE4EA001C50E2 /* CreatePostVC.swift */; };
+		CD17607C21237A9100B8E85C /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD17607B21237A9100B8E85C /* UIViewControllerExt.swift */; };
 		CD393C1E211F72F4009A8961 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD393C1D211F72F4009A8961 /* GroupCell.swift */; };
 		CD393C20211F779B009A8961 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD393C1F211F779B009A8961 /* Group.swift */; };
 		CD393C22211F812B009A8961 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD393C21211F812B009A8961 /* GroupFeedCell.swift */; };
@@ -47,6 +48,7 @@
 		CD0FA33820EFC732001C50E2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CD0FA33A20EFDD99001C50E2 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		CD0FA33C20EFE4EA001C50E2 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		CD17607B21237A9100B8E85C /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CD393C1D211F72F4009A8961 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		CD393C1F211F779B009A8961 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		CD393C21211F812B009A8961 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				CD7E41D220F0F33B0023D79D /* UIViewExt.swift */,
+				CD17607B21237A9100B8E85C /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				CD0FA33320EFC19E001C50E2 /* Constants.swift in Sources */,
 				CD0FA33B20EFDD99001C50E2 /* MeVC.swift in Sources */,
 				CD393C1E211F72F4009A8961 /* GroupCell.swift in Sources */,
+				CD17607C21237A9100B8E85C /* UIViewControllerExt.swift in Sources */,
 				CD0FA33D20EFE4EA001C50E2 /* CreatePostVC.swift in Sources */,
 				CD3B4BE1211542B50059573A /* UserCell.swift in Sources */,
 				CD0FA33920EFC732001C50E2 /* AuthService.swift in Sources */,

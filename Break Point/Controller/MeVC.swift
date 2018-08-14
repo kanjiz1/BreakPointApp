@@ -20,7 +20,7 @@ class MeVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+        super.viewWillAppear(animated)
         self.emailLabel.text = Auth.auth().currentUser?.email
     }
 
