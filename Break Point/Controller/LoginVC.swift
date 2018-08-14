@@ -43,7 +43,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func closeButtonWasPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
     }
 }
 

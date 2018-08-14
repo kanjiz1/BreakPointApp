@@ -36,6 +36,6 @@ class MeVC: UIViewController {
             }
         }
         logoutPopUp.addAction(logoutAction)
-        present(logoutPopUp, animated: true, completion: nil)
+        presentDetail(logoutPopUp)
     }
 }

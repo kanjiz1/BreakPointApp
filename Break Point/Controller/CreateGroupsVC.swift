@@ -53,7 +53,7 @@ class CreateGroupsVC: UIViewController {
     }
     
     @IBAction func cancelButtonWasPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
     }
 }
 
