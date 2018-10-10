@@ -8,9 +8,11 @@
 
 import Foundation
 import Firebase
+import FirebaseStorage
 
 //Firebase Database URL Method
 let DB_BASE = Database.database().reference()
+let REF_STORAGE = Storage.storage().reference()
 
 class DataService{
     static let instance = DataService()
@@ -55,6 +57,26 @@ class DataService{
         }
     }
     
+    //Uploading Images
+    func uploadImages(profileImage image: UIImage, uploadComplete: @escaping(_ status: Bool) -> ()){
+        let storageRef = REF_STORAGE.child("\(randomString(5)).png")
+        if let uploadData = UIImagePNGRepresentation(image){
+            storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
+                if error != nil {
+                    print(error)
+                    return
+                }
+                print(metadata)
+                
+            }
+            uploadComplete(true)
+        }
+    }
+    
+    //Getting  Images
+    func gettingAllImages(){
+        
+    }
     
     //Getting Username for uid
     func getUsername(forUID uid:String, handler: @escaping (_ username: String) -> ()){

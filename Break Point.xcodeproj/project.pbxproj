@@ -33,8 +33,27 @@
 		CDE05A4520EE12BC007F7EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE05A4320EE12BC007F7EFB /* Main.storyboard */; };
 		CDE05A4720EE12BE007F7EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE05A4620EE12BE007F7EFB /* Assets.xcassets */; };
 		CDE05A4A20EE12BE007F7EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE05A4820EE12BE007F7EFB /* LaunchScreen.storyboard */; };
+		CDE67B46216E935300547221 /* Break_PointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE67B45216E935300547221 /* Break_PointUITests.swift */; };
+		CDE67B54216E936800547221 /* Break_PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE67B53216E936800547221 /* Break_PointTests.swift */; };
 		FC78B71F9EF00F1A55C28E63 /* Pods_Break_Point.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B936998EB7C6D16614F233 /* Pods_Break_Point.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE67B48216E935300547221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE05A3220EE12BC007F7EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE05A3920EE12BC007F7EFB;
+			remoteInfo = "Break Point";
+		};
+		CDE67B56216E936800547221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE05A3220EE12BC007F7EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE05A3920EE12BC007F7EFB;
+			remoteInfo = "Break Point";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A6093B2BF8E825D496C4F86C /* Pods-Break Point.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Break Point.release.xcconfig"; path = "Pods/Target Support Files/Pods-Break Point/Pods-Break Point.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +85,12 @@
 		CDE05A4620EE12BE007F7EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE05A4920EE12BE007F7EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE05A4B20EE12BE007F7EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE67B43216E935300547221 /* Break PointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Break PointUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE67B45216E935300547221 /* Break_PointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break_PointUITests.swift; sourceTree = "<group>"; };
+		CDE67B47216E935300547221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE67B51216E936800547221 /* Break PointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Break PointTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE67B53216E936800547221 /* Break_PointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break_PointTests.swift; sourceTree = "<group>"; };
+		CDE67B55216E936800547221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D4541E62AD8952FC463AAE /* Pods-Break Point.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Break Point.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Break Point/Pods-Break Point.debug.xcconfig"; sourceTree = "<group>"; };
 		E8B936998EB7C6D16614F233 /* Pods_Break_Point.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Break_Point.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +101,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC78B71F9EF00F1A55C28E63 /* Pods_Break_Point.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE67B40216E935300547221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE67B4E216E936800547221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				CDE05A3C20EE12BC007F7EFB /* Break Point */,
+				CDE67B44216E935300547221 /* Break PointUITests */,
+				CDE67B52216E936800547221 /* Break PointTests */,
 				CDE05A3B20EE12BC007F7EFB /* Products */,
 				598239CF508799ED3D838A0A /* Pods */,
 				DDBC710534B1FC9E11E86F80 /* Frameworks */,
@@ -146,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				CDE05A3A20EE12BC007F7EFB /* Break Point.app */,
+				CDE67B43216E935300547221 /* Break PointUITests.xctest */,
+				CDE67B51216E936800547221 /* Break PointTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +226,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		CDE67B44216E935300547221 /* Break PointUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE67B45216E935300547221 /* Break_PointUITests.swift */,
+				CDE67B47216E935300547221 /* Info.plist */,
+			);
+			path = "Break PointUITests";
+			sourceTree = "<group>";
+		};
+		CDE67B52216E936800547221 /* Break PointTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE67B53216E936800547221 /* Break_PointTests.swift */,
+				CDE67B55216E936800547221 /* Info.plist */,
+			);
+			path = "Break PointTests";
+			sourceTree = "<group>";
+		};
 		DDBC710534B1FC9E11E86F80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,18 +274,62 @@
 			productReference = CDE05A3A20EE12BC007F7EFB /* Break Point.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CDE67B42216E935300547221 /* Break PointUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE67B4C216E935300547221 /* Build configuration list for PBXNativeTarget "Break PointUITests" */;
+			buildPhases = (
+				CDE67B3F216E935300547221 /* Sources */,
+				CDE67B40216E935300547221 /* Frameworks */,
+				CDE67B41216E935300547221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE67B49216E935300547221 /* PBXTargetDependency */,
+			);
+			name = "Break PointUITests";
+			productName = "Break PointUITests";
+			productReference = CDE67B43216E935300547221 /* Break PointUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CDE67B50216E936800547221 /* Break PointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE67B58216E936800547221 /* Build configuration list for PBXNativeTarget "Break PointTests" */;
+			buildPhases = (
+				CDE67B4D216E936800547221 /* Sources */,
+				CDE67B4E216E936800547221 /* Frameworks */,
+				CDE67B4F216E936800547221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE67B57216E936800547221 /* PBXTargetDependency */,
+			);
+			name = "Break PointTests";
+			productName = "Break PointTests";
+			productReference = CDE67B51216E936800547221 /* Break PointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CDE05A3220EE12BC007F7EFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Oforkanji Odekpe";
 				TargetAttributes = {
 					CDE05A3920EE12BC007F7EFB = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					CDE67B42216E935300547221 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CDE05A3920EE12BC007F7EFB;
+					};
+					CDE67B50216E936800547221 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CDE05A3920EE12BC007F7EFB;
 					};
 				};
 			};
@@ -242,6 +347,8 @@
 			projectRoot = "";
 			targets = (
 				CDE05A3920EE12BC007F7EFB /* Break Point */,
+				CDE67B42216E935300547221 /* Break PointUITests */,
+				CDE67B50216E936800547221 /* Break PointTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +362,20 @@
 				CD0FA32B20EFB669001C50E2 /* GoogleService-Info.plist in Resources */,
 				CDE05A4720EE12BE007F7EFB /* Assets.xcassets in Resources */,
 				CDE05A4520EE12BC007F7EFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE67B41216E935300547221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE67B4F216E936800547221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +408,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Break Point/Pods-Break Point-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -335,7 +456,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDE67B3F216E935300547221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE67B46216E935300547221 /* Break_PointUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE67B4D216E936800547221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE67B54216E936800547221 /* Break_PointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE67B49216E935300547221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE05A3920EE12BC007F7EFB /* Break Point */;
+			targetProxy = CDE67B48216E935300547221 /* PBXContainerItemProxy */;
+		};
+		CDE67B57216E936800547221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE05A3920EE12BC007F7EFB /* Break Point */;
+			targetProxy = CDE67B56216E936800547221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CDE05A4320EE12BC007F7EFB /* Main.storyboard */ = {
@@ -479,10 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Break Point/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Break-Point";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -498,14 +645,83 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Break Point/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Break-Point";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDE67B4A216E935300547221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W87L6W32DM;
+				INFOPLIST_FILE = "Break PointUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "oforkanjiodekpe.Break-PointUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Break Point";
+			};
+			name = Debug;
+		};
+		CDE67B4B216E935300547221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W87L6W32DM;
+				INFOPLIST_FILE = "Break PointUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "oforkanjiodekpe.Break-PointUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Break Point";
+			};
+			name = Release;
+		};
+		CDE67B59216E936800547221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W87L6W32DM;
+				INFOPLIST_FILE = "Break PointTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "oforkanjiodekpe.Break-PointTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Break Point.app/Break Point";
+			};
+			name = Debug;
+		};
+		CDE67B5A216E936800547221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W87L6W32DM;
+				INFOPLIST_FILE = "Break PointTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "oforkanjiodekpe.Break-PointTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Break Point.app/Break Point";
 			};
 			name = Release;
 		};
@@ -526,6 +742,24 @@
 			buildConfigurations = (
 				CDE05A4F20EE12BE007F7EFB /* Debug */,
 				CDE05A5020EE12BE007F7EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE67B4C216E935300547221 /* Build configuration list for PBXNativeTarget "Break PointUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE67B4A216E935300547221 /* Debug */,
+				CDE67B4B216E935300547221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE67B58216E936800547221 /* Build configuration list for PBXNativeTarget "Break PointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE67B59216E936800547221 /* Debug */,
+				CDE67B5A216E936800547221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
