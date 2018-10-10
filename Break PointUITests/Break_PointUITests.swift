@@ -28,6 +28,14 @@ class Break_PointUITests: XCTestCase {
 
     func testExample() {
         // Use recording to get started writing UI tests.
+
+        let app = XCUIApplication()
+        app.tabBars.buttons["Groups"].tap()
+        app.tabBars.buttons["Me"].tap()
+        app.tabBars.buttons["Feed"].tap()
+        
+        
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
